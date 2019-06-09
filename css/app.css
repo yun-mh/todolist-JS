@@ -1,0 +1,189 @@
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.action {}
+
+.action_none {
+    display: none;
+}
+
+body {
+    background-color: #005737;
+    margin: 0;
+    color: azure;
+    font-family: 'Kalam', cursive, 'Kosugi Maru', sans-serif, 'Gamja Flower', cursive;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1rem;
+}
+
+.copyright span {
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.todo__container {
+    clear: both;
+}
+
+.todo__display-part {
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.todo__display-title {
+    margin-top: 0;
+    border-bottom: 5px solid azure;
+}
+
+.item {
+    white-space: normal;
+    height:auto;
+}
+
+.item__task {
+    float: left;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.task__edit {
+    float: left;
+    display: none;
+    font-size: inherit;
+    background: #000;
+    font: inherit;
+    color: inherit;
+    opacity: 0.3;
+    vertical-align: middle;
+    width: 65%;
+}
+
+.task__edit:focus {
+    outline: none;
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+.on {
+    display: inline-block;
+}
+
+.off {
+    display: none;
+}
+
+.item__edit,
+.item__delete,
+.item__check,
+.item__ok,
+.item__cancel {
+    float: left;
+}
+
+.item__edit--btn,
+.item__delete--btn,
+.item__check--btn {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item__ok--btn,
+.item__cancel--btn {
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.item__edit--btn:focus,
+.item__delete--btn:focus,
+.item__check--btn:focus,
+.item__ok--btn:focus,
+.item__cancel--btn:focus,
+.btn-add:focus,
+.task-input:focus {
+    outline: none;
+}
+
+.item__edit--btn:hover,
+.item__delete--btn:hover,
+.item__check--btn:hover,
+.item__ok--btn:hover,
+.item__cancel--btn:hover,
+.btn-add:hover {
+    opacity: 0.7;
+}
+
+.item__edit--btn:active,
+.item__delete--btn:active,
+.item__check--btn:active,
+.item__ok--btn:active,
+.item__cancel--btn:active,
+.btn-add:active {
+    transform: translateY(2px);
+}
+
+.item:hover .item__edit--btn { display: inline-block; }
+.item:hover .item__delete--btn { display: inline-block; }
+.item:hover .item__check--btn { display: inline-block; }
+
+.red { color: #e74c3c }
+.blue { color: #3498db }
+.yellow { color: #f1c40f }
+.green { color: #2ecc71 }
+
+
+.todo__controller {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #5a3921;
+    border-top: 1px solid #352114;
+}
+
+.task-input {
+    vertical-align: middle;
+    width: 50%;
+    height: 25px;
+    opacity: 0.4;
+    border-radius: 5px;
+    border-width: 0;
+    padding: 3px;
+}
+
+.btn-add {
+    vertical-align: middle;
+    height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    border: 0;
+    border-radius: 5px;
+    background-color: #bdc3c7;
+}
